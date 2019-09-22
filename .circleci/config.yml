@@ -35,7 +35,6 @@ jobs:
       - run: # For TestQuality
           name: TestQuality Login
           command: './testquality-linux login drasticdpk@gmail.com Testquality@100 --save'  
-          when : always
       - run: 
           name: TestQuality  File Upload
           command: ./testquality-linux upload_test_run junitresults.xml --project_name='protractor-jasmine-typescript' --plan_name='Smoke Test'
