@@ -14,7 +14,8 @@ fdescribe('The Atata Website Tests: ', () => {
     });
 
     it('As a user I can verify text on the page', async function () {
-        await commonPageHelper.verifyPageTitle(theatataPageConstant.pageContent.h1Text);
+        await commonPageHelper.verifyPageTitle('test');
+        // await commonPageHelper.verifyPageTitle(theatataPageConstant.pageContent.h1Text);
         await commonPageHelper.clickOnAnchorText(theatataPageConstant.link.homePageLogo);
         await commonPageHelper.clickOnAnchorText(theatataPageConstant.link.menuPlans);
         await commonPageHelper.verifyTextOnPage(theatataPageConstant.pageContent.h1Text);
