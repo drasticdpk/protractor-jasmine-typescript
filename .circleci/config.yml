@@ -32,6 +32,7 @@ jobs:
       - run: # run tests
           name: test
           command: npm test
+          when : always
       - run: # For TestQuality
           name: TestQuality Login
           command: './testquality-linux login drasticdpk@gmail.com Testquality@100 --save'  
