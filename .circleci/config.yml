@@ -5,10 +5,7 @@ jobs:
     docker: # run the steps with Docker
       - image: circleci/node:11-browsers # ...with this image as the primary container; this is where all `steps` will run
     steps: # a collection of executable commands
-      - checkout # special step to check out source code to working directory
-      - run: # For TestQuality
-          name: TestQuality
-          command: 'sudo chmod 755 testquality-linux' 
+      - checkout # special step to check out source code to working directory 
       - run:
           name: update-npm
           command: 'sudo npm install -g npm@latest'
@@ -33,12 +30,11 @@ jobs:
           name: test
           command: npm test
       - run: # For TestQuality
-          name: TestQuality Login
-          command: './testquality-linux login drasticdpk@gmail.com Testquality@100 --save'  
-          when: always
-      - run: 
-          name: TestQuality  File Upload
-          command: ./testquality-linux upload_test_run junitresults.xml --project_name='protractor-jasmine-typescript' --plan_name='Smoke Test'
+          name: TestQuality Login/Upload file to Test TestQuality Server
+          command: |
+          'sudo chmod 755 testquality-linux' 
+          './testquality-linux login drasticdpk@gmail.com Testquality@100 --save'  
+          ./testquality-linux upload_test_run junitresults.xml --project_name='protractor-jasmine-typescript' --plan_name='Smoke Test'
           when: always
 
       # - run: # run coverage report
