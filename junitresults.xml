@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="6" time="10.543">
+ <testsuite name="The Atata Website Tests: " timestamp="2019-09-21T21:32:08" hostname="localhost" time="10.543" errors="0" tests="6" skipped="0" disabled="0" failures="1">
+  <testcase classname="The Atata Website Tests: " name="As a user I can verify text on the page" time="2.225" />
+  <testcase classname="The Atata Website Tests: " name="As a user I can verify title on the page" time="0.241" />
+  <testcase classname="The Atata Website Tests: " name="As a user I can verify sign up link is workng" time="0.542" />
+  <testcase classname="The Atata Website Tests: " name="As a user I can verify sign in link is workng" time="0.524" />
+  <testcase classname="The Atata Website Tests: " name="As a user I can verify system is not taking invalid email" time="0.72" />
+  <testcase classname="The Atata Website Tests: " name="As a user I can verify sign up function is workng" time="6.29">
+   <failure type="exception" message="Failed: No element found using locator: By(xpath, //h1[contains(text(),&apos;Deepak Thapa1&apos;)])"><![CDATA[NoSuchElementError: No element found using locator: By(xpath, //h1[contains(text(),'Deepak Thapa1')])
+    at elementArrayFinder.getWebElements.then (/Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/node_modules/protractor/built/element.js:814:27)
+    at ManagedPromise.invokeCallback_ (/Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+    at TaskQueue.execute_ (/Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+    at TaskQueue.executeNext_ (/Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+    at asyncRun (/Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/node_modules/selenium-webdriver/lib/promise.js:2927:27)
+    at /Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/node_modules/selenium-webdriver/lib/promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:86:5)Error
+    at ElementArrayFinder.applyAction_ (/Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/node_modules/protractor/built/element.js:459:27)
+    at ElementArrayFinder.(anonymous function).args [as getText] (/Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/node_modules/protractor/built/element.js:91:29)
+    at ElementFinder.(anonymous function).args [as getText] (/Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/node_modules/protractor/built/element.js:831:22)
+    at Function.<anonymous> (/Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/page-objects/common/common.helper.ts:21:70)
+    at step (/Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/temp/page-objects/common/common.helper.js:32:23)
+    at Object.next (/Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/temp/page-objects/common/common.helper.js:13:53)
+    at /Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/temp/page-objects/common/common.helper.js:7:71
+    at new Promise (<anonymous>)
+    at __awaiter (/Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/temp/page-objects/common/common.helper.js:3:12)
+    at Function.commonPageHelper.verifyTextInH1 (/Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/temp/page-objects/common/common.helper.js:80:16)
+From: Task: Run it("As a user I can verify sign up function is workng") in control flow
+    at UserContext.<anonymous> (/Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/node_modules/jasminewd2/index.js:94:19)
+    at attempt (/Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+    at QueueRunner.run (/Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+    at runNext (/Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)
+    at /Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4264:13
+    at /Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4172:9
+    at /Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/node_modules/jasminewd2/index.js:64:48
+    at ControlFlow.emit (/Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/node_modules/selenium-webdriver/lib/events.js:62:21)
+    at ControlFlow.shutdown_ (/Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/node_modules/selenium-webdriver/lib/promise.js:2674:10)
+    at shutdownTask_.MicroTask (/Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/node_modules/selenium-webdriver/lib/promise.js:2599:53)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (/Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/test-suites/home.spec.ts:50:5)
+    at addSpecsToSuite (/Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+    at Env.fdescribe (/Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1095:7)
+    at fdescribe (/Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4428:18)
+    at Object.<anonymous> (/Users/deepakthapa/Documents/Automation/protractor-jasmine-typescript/test-suites/home.spec.ts:7:1)
+    at Module._compile (internal/modules/cjs/loader.js:816:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:827:10)
+    at Module.load (internal/modules/cjs/loader.js:685:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:620:12)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+</testsuites>
