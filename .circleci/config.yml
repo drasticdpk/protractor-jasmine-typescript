@@ -6,9 +6,6 @@ jobs:
       - image: circleci/node:11-browsers # ...with this image as the primary container; this is where all `steps` will run
     steps: # a collection of executable commands
       - checkout # special step to check out source code to working directory 
-      - run: # For TestQuality
-          name: TestQuality
-          command: 'sudo chmod 755 testquality-linux' 
       - run:
           name: update-npm
           command: 'sudo npm install -g npm@latest'
@@ -35,6 +32,7 @@ jobs:
       - run: # For TestQuality
           name: TestQuality Login/Upload file to Test TestQuality Server
           command: |
+            sudo npm install -g npm@latest
             ./testquality-linux login drasticdpk@gmail.com Testquality@100 --save
             ./testquality-linux upload_test_run junitresults.xml --project_name='protractor-jasmine-typescript' --plan_name='Smoke Test'
           when: always
