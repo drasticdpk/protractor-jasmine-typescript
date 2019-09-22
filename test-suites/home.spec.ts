@@ -55,7 +55,7 @@ fdescribe('The Atata Website Tests: ', () => {
         await page.click(page.elements.chkAgreeInput)
         await page.click(page.elements.loginButton);
         await commonPageHelper.verifyUrlContain(theatataPageConstant.redirectLink.userLink);
-        await commonPageHelper.verifyTextInH1('Deepak Thapa1');
+        await commonPageHelper.verifyTextInH1('Deepak Thapa');
         await commonPageHelper.verifyTextInTable('deepak@email.com');
     });
 
