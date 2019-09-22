@@ -27,12 +27,12 @@ jobs:
           command: './node_modules/.bin/webdriver-manager start --versions.chrome= 12.1.6;'   
           background: true    
       - run: # run tests
-          name: test
+          name: Execute Smoke Test
           command: npm test
       - run: # For TestQuality
           name: TestQuality Login/Upload file to Test TestQuality Server
           command: |
-            sudo npm install -g npm@latest
+            sudo chmod 755 testquality-linux
             ./testquality-linux login drasticdpk@gmail.com Testquality@100 --save
             ./testquality-linux upload_test_run junitresults.xml --project_name='protractor-jasmine-typescript' --plan_name='Smoke Test'
           when: always
