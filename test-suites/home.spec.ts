@@ -47,7 +47,7 @@ fdescribe('The Atata Website Tests: ', () => {
         await page.verifyEmailFormat();
 
     });
-    it('As a user I can verify sign up function is workng', async function () {
+    it('As a user I can verify sign up function is working', async function () {
 
         await commonPageHelper.clickOnAnchorText(theatataPageConstant.link.menuSignUp);
         await commonPageHelper.verifyCurrentUrl(theatataPageConstant.redirectLink.signUpLink);
