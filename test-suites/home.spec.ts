@@ -39,7 +39,7 @@ fdescribe('The Atata Website Tests: ', () => {
         await commonPageHelper.verifyCurrentUrl(theatataPageConstant.redirectLink.signInLink);
 
     });
-    it('As a user I can verify system is not taking invalid email', async function () {
+    it('As a user I can verify system is not taking invalid eemail', async function () {
 
         await commonPageHelper.clickOnAnchorText(theatataPageConstant.link.menuSignUp);
         await commonPageHelper.verifyCurrentUrl(theatataPageConstant.redirectLink.signUpLink);
