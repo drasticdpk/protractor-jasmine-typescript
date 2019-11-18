@@ -20,7 +20,7 @@ This is Test Automation framework designed using Protractor, Jasmine and TypeScr
 ### Pre-requisites
 * Download and install Chrome or Firefox browser.
 * Download and install Node.js:
-  * [Install Node.JS](https://qaloop.tk/blog/install-node-js/ "Install Node.JS")
+  * [Install Node.JS](https://nodejs.org/en/download/)
 * Optional - Download and install any Text Editor like Visual Code/Sublime/Brackets
   * [Install Visual Studio Code](https://qaloop.tk/blog/install-visual-studio-code/ "Install Visual Studio Code")
 
@@ -32,23 +32,9 @@ This is Test Automation framework designed using Protractor, Jasmine and TypeScr
 * Go to Project root directory and install Dependency: `npm install` and `node_modules/.bin/webdriver-manager start`
 * All the dependencies from package.json and ambient typings would be installed in node_modules folder.
 
-### How to write Test
-* Add new spec under test-suite folder
-* Name the file as <testname>.spec.ts (e.g. super-calculator.spec.ts)
-* Create folder under page-objects/pages as <page-name> (e.g. super-calculator)
-* Under page folder create constant, helper and page object file.
-    * <page-name>.constants.ts (e.g. super-calculator.constants.ts)
-    * <page-name>.helper.ts (e.g. super-calculator.helper.ts)
-    * <page-name>.po.ts (e.g. super-calculator.po.ts)
+ 
 
 ### How to Run Test
 * Run complete Test Suite: `npm test`
 
-### How to Update local npm packages
-* Go to Project root directory and run command: `npm update`
-
-### Sample Test Results
-![Protractor, Jasmine and Typescript Test Results](./images/test-results.png?raw=true "Protractor, Jasmine and Typescript Test Results")
-
-
- # Smoke-Test
+ 
