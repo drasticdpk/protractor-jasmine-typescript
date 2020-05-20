@@ -11,7 +11,7 @@ exports.config = {
     capabilities: {
         'browserName': 'firefox',
         'moz:firefoxOptions': {
-            args: [ "--headless" ]
+            //args: [ "--headless" ]
           }
         // chromeOptions: {
         //     args: ['--headless','--disable-gpu', '--window-size=800x600','--no-sandbox']
