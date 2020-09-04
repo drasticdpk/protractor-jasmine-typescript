@@ -8,7 +8,7 @@
     "exceljs": "^1.13.0",
     "jasmine": "^3.4.0",
     "jasmine-reporters": "^2.3.2",
-    "papaparse": "^4.6.3",
+    "papaparse": "^5.2.0",
     "protractor": "^5.4.2",
     "protractor-beautiful-reporter": "^1.2.8",
     "typescript": "^3.5.3",
